@@ -1,10 +1,10 @@
-﻿namespace Project_A_Petrenko_program
+﻿namespace Project_Restaurant
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.ReadLine();
         }
     }
 }
