@@ -14,7 +14,7 @@ namespace Project_Restaurant
         public string Address { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public bool IsVegetarian { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
-        public Customer(string Address, bool IsVegetarian, string PhoneNumber)
+        public Customer(string firstName, string lastName, string phoneNumber, string address, bool isVegetarian)
         {
             throw new NotImplementedException();
         }
