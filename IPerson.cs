@@ -10,5 +10,7 @@ namespace Project_Restaurant
     {
         string FirstName { get; set; }
         string LastName { get; set; }
+
+        public string GetInfo();
     }
 }

@@ -8,9 +8,9 @@ namespace Project_Restaurant
 {
     public class Order : IPrintable
     {
-        public int Id { get; set; }
-        public DateTime OrderDate { get; set; }
-        List<string> items = new List<string>();
+        public int Id { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public DateTime OrderDate { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        List<string> items;
 
         public Order(int id, DateTime orderDate, List<string> items)
         {

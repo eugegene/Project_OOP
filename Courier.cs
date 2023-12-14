@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project_Restaurant
 {
-    public class Courier : IPerson, IPrintable
+    public class Courier : IPerson
     {
         public string FirstName { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public string LastName { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
@@ -17,7 +17,9 @@ namespace Project_Restaurant
             throw new NotImplementedException();
         }
 
-        public void Print()
-        { throw new NotImplementedException(); }
+        public string GetInfo()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
