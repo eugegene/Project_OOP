@@ -3,17 +3,17 @@
   <Class Name="Project_Restaurant.Customer" BaseTypeListCollapsed="true">
     <Position X="2.75" Y="1" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAEAAAAAAAAAAAAAAQAAAAAAAAIACAMAAAAAEAAg=</HashCode>
+      <HashCode>AAEBAEAAAAAAAAAAAAEAQAAAAAAAAEACAMAAAEAAAAg=</HashCode>
       <FileName>Customer.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="Project_Restaurant.Order">
     <Position X="6.25" Y="1" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>CAACAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>CAACAAAAAAAACAAEAAAAAAAAgAAAAAAEAAgAAAAEABA=</HashCode>
       <FileName>Order.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Project_Restaurant.Program">
     <Position X="4.5" Y="1" Width="1.5" />
@@ -22,19 +22,61 @@
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Interface Name="Project_Restaurant.IPerson">
-    <Position X="4.5" Y="3.25" Width="1.5" />
+  <Class Name="Project_Restaurant.Courier">
+    <Position X="1" Y="1" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
-      <FileName>IPerson.cs</FileName>
+      <HashCode>AAEAAEAAAAAAAAAAAAEAAAAAAAAAAEAAAAAAAAAAAAg=</HashCode>
+      <FileName>Courier.cs</FileName>
     </TypeIdentifier>
-  </Interface>
+  </Class>
+  <Class Name="Project_Restaurant.Person">
+    <Position X="1" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAg=</HashCode>
+      <FileName>Person.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Project_Restaurant.UserMenu">
+    <Position X="8.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAIAAAgUACAAAAAAIMAEgAAACAA=</HashCode>
+      <FileName>UserMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Project_Restaurant.VegeterianCustomer">
+    <Position X="2.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAIAAAAAAAAA=</HashCode>
+      <FileName>VegeterianCustomer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Interface Name="Project_Restaurant.IPrintable">
-    <Position X="6.25" Y="3.25" Width="1.5" />
+    <Position X="6.25" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
       <FileName>IPrintable.cs</FileName>
     </TypeIdentifier>
   </Interface>
+  <Enum Name="Project_Restaurant.Burgers" Collapsed="true">
+    <Position X="4.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAACAAAAAAAgAAAAAAAAAAI=</HashCode>
+      <FileName>OrderItems.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Project_Restaurant.Soups" Collapsed="true">
+    <Position X="4.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACBAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>OrderItems.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Project_Restaurant.Drinks" Collapsed="true">
+    <Position X="4.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAQAAAAAAAACAAAEAAAAAA=</HashCode>
+      <FileName>OrderItems.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

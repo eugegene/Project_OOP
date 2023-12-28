@@ -6,20 +6,38 @@ using System.Threading.Tasks;
 
 namespace Project_Restaurant
 {
-    public class Courier : IPerson
+    public class Courier : Person
     {
-        public string FirstName { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string LastName { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string UserID { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+		private string _firstName;
+		private string _lastName;
+		public override string FirstName
+		{
+			get => _firstName; set
+			{
+				if (string.IsNullOrEmpty(value))
+					throw new ArgumentNullException(nameof(value));
+				_firstName = value;
+			}
+		}
+		public override string LastName
+		{
+			get => _lastName; set
+			{
+				if (string.IsNullOrEmpty(value))
+					throw new ArgumentNullException(nameof(value));
+				_lastName = value;
+			}
+		}
 
-        public Courier(string firstName, string lastName, string userID)
+		public Courier(string firstName, string lastName)
         {
-            throw new NotImplementedException();
+            FirstName = firstName;
+            LastName = lastName;
         }
 
-        public string GetInfo()
+        public override string GetInfo()
         {
-            throw new NotImplementedException();
+            return $"{FirstName} {LastName}";
         }
     }
 }
