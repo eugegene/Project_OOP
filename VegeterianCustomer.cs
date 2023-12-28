@@ -15,7 +15,7 @@ namespace Project_Restaurant
 		public override void MadeOrder(Order order)
 		{
 			order.Items = order.Items.Where(u => u == "Домашній"|| u == "Гречаний" || u == "КремСуп" || u == "Кола" || u == "Спрайт" || u == "Фанта" || u == "Лимонад").ToList();
-            Console.WriteLine("Видалено усі не-веганські опції");
+            Console.WriteLine("Видалено усі не-вегетаріанські страви");
             base.MadeOrder(order);
 		}
 		public override string GetInfo()

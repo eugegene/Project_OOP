@@ -15,7 +15,7 @@ namespace Project_Restaurant
 
         public Order(int id, DateTime orderDate,Courier courier, List<string> items)
         {
-            Id= id;
+            Id = id;
             OrderDate = orderDate;
             Courier = courier;
             Items = items;
@@ -44,7 +44,7 @@ namespace Project_Restaurant
 		{
 			string result= $"id замовлення:{Id}\nДата замовлення:{OrderDate.ToString("dddd, dd MMMM yyyy")}\nid кур'єра:{Courier.FirstName}\nПозиції:\n";
 			foreach (string item in Items)
-				result+=(item + " ");
+				result += (item + " ");
             return result;
 		}
 

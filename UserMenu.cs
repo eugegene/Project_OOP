@@ -55,7 +55,7 @@ namespace Project_Restaurant
 						Exit();
 						break;
 					default:
-						throw new Exception("немає такої опції");
+						throw new Exception("Неправильний вибір!");
 				}
 
 			}
@@ -110,7 +110,7 @@ namespace Project_Restaurant
 		public void DeleteOrder()
 		{
 			if (CurrentCustomer == null)
-				throw new Exception("Не обраний користувач");
+				throw new Exception("Перед видаленням замовлення оберіть користувача!");
 			if(CurrentCustomer.DeleteOrder(CurrentCustomer.Orders.LastOrDefault()))
 			{
                 Console.WriteLine("Видалено останнє замовлення");
