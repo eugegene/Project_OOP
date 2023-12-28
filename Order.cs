@@ -6,24 +6,51 @@ using System.Threading.Tasks;
 
 namespace Project_Restaurant
 {
-    public class Order : IPrintable
+    public class Order : IPrintable, ICloneable
     {
-        public int Id { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public DateTime OrderDate { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        List<string> items;
+        public int Id { get; set; }
+        public Courier Courier { get; set; }
+        public DateTime OrderDate { get; set; }
+        public List<string> Items;
 
-        public Order(int id, DateTime orderDate, List<string> items)
+        public Order(int id, DateTime orderDate,Courier courier, List<string> items)
         {
-            throw new NotImplementedException();
+            Id= id;
+            OrderDate = orderDate;
+            Courier = courier;
+            Items = items;
         }
 
-        public void AddItem()
-        { throw new NotImplementedException(); }
+        public void AddItem(string item)
+        { 
+            Items.Add(item);
+        }
 
-        public void RemoveItem() 
-        { throw new NotImplementedException(); }
+        public bool RemoveItem(string item) 
+        {
+            if(Items.Contains(item))
+            {
+                Items.Remove(item);
+                return true;
+            }
+            return false;
+        }
 
         public void Print()
-        { throw new NotImplementedException(); }
-    }
+        {
+            Console.WriteLine(ToString());
+        }
+		public override string ToString()
+		{
+			string result= $"id замовлення:{Id}\nДата замовлення:{OrderDate.ToString("dddd, dd MMMM yyyy")}\nid кур'єра:{Courier.FirstName}\nПозиції:\n";
+			foreach (string item in Items)
+				result+=(item + " ");
+            return result;
+		}
+
+		public object Clone()
+		{
+			return new Order(Id, OrderDate,Courier, Items);
+		}
+	}
 }
